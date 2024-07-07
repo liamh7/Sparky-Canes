@@ -1,0 +1,258 @@
+:root {
+    --cabeza-height: 90px;
+    --extra-margin: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+/* Estilos para la cabeza */
+.cabeza {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: var(--cabeza-height);
+    width: 100%;
+    z-index: 1000;
+    padding: 0 20px; /* Añade espacio alrededor del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para el contenido de la cabeza */
+.info {
+    display: flex; /* Hace que los elementos se alineen en una fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 800px; /* Empuja el logo hacia la izquierda */
+}
+
+.logo img {
+    height: var(--cabeza-height); /* Ajusta la altura del logo según el encabezado */
+    width: auto;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    font-family: Avelire;
+    font-weight: bold;
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: black;
+}
+
+.tarifas, .socios{
+    margin: 30px;
+}
+
+/* Estilos para el contenido principal */
+.contenido, .conte {
+    margin-top: calc(var(--cabeza-height) + var(--extra-margin));
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table caption {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+.conte{
+    width: 700px;
+    font-family: Astonpoliz;
+    margin-left: 20px;
+    padding: 20px; /* Espacio alrededor del contenido */
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.conte h2 {
+    font-family: astonpoliz;
+    font-size: 24px;
+    color: #333; /* Cambia el color según tus preferencias */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.conte p {
+    font-family: astonpoliz;
+    font-size: 16px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #666; /* Cambia el color según tus preferencias */
+}
+
+.bloque {
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    margin-bottom: 20px; /* Espacio entre bloques */
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.bloque p, .bloque h3 {
+    margin: 0;
+}
+
+.bloque h3{
+    font-family: Avelire;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.bloque2, .bloque3, .bloque4 p{
+    font-family: Astonpoliz;
+    font-size: 16px;
+}
+
+.bloque img {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+    width: 400px;
+    border-radius: 5px; /* Borde redondeado para las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+}
+
+.SP {
+    font-family: GulfDisplay;
+    font-size: 89px;
+}
+
+.eslogan {
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.paginado {
+    position: fixed;
+    top: var(--cabeza-height);
+    right: 160px; /* Ajusta el valor según tus necesidades */
+    font-size: 45px;
+    font-family: GulfDisplay;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.letra {
+    margin-bottom: 5px; /* Espacio entre cada letra */
+}
+
+/* Estilos para el pie de página */
+.pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Cambiado a position: relative */
+    width: 100%;
+}
+
+.pie .icpie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie .icpie a {
+    margin: 0 10px;
+}
+
+.icpie img{
+    width: 25px;
+    height: auto;
+}
+
+.polpie {
+    margin-bottom: 10px;
+}
+
+.polpie p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cabeza {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .encabezado {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bloque {
+        flex-direction: column;
+    }
+
+    .bloque img {
+        margin-top: 10px; /* Espacio entre imagen y texto */
+    }
+}
+
+/* Fuente personalizada */
+@font-face {
+    font-family: GulfDisplay;
+    src: url(FUENTES/GulfsDisplay.ttf);
+}
+
+@font-face {
+    font-family: Astonpoliz;
+    src: url(FUENTES/Astonpoliz.otf);
+}
+
+@font-face {
+    font-family: Avelire;
+    src: url(FUENTES/AVELIRE.woff);
+}
