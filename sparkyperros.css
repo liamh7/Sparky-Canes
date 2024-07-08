@@ -9,7 +9,6 @@ body {
     background-color: skyblue;
 }
 
-/* Estilos para la cabeza */
 .cabeza {
     position: fixed;
     display: flex;
@@ -22,23 +21,22 @@ body {
     height: var(--cabeza-height);
     width: 100%;
     z-index: 1000;
-    padding: 0 20px; /* Añade espacio alrededor del contenido */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 0 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilos para el contenido de la cabeza */
 .info {
-    display: flex; /* Hace que los elementos se alineen en una fila */
-    align-items: center; /* Alinea verticalmente los elementos */
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     margin-left: 20px;
-    margin-right: 800px; /* Empuja el logo hacia la izquierda */
+    margin-right: 800px;
 }
 
 .logo img {
-    height: var(--cabeza-height); /* Ajusta la altura del logo según el encabezado */
+    height: var(--cabeza-height);
     width: auto;
 }
 
@@ -49,7 +47,7 @@ body {
     font-weight: bold;
 }
 
-.encabezado a {
+.encabezado a, .polpie a {
     text-decoration: none;
     color: black;
 }
@@ -58,7 +56,6 @@ body {
     margin: 30px;
 }
 
-/* Estilos para el contenido principal */
 .contenido, .conte {
     margin-top: calc(var(--cabeza-height) + var(--extra-margin));
     padding: 20px;
@@ -104,37 +101,37 @@ table tbody tr:hover {
     width: 700px;
     font-family: Astonpoliz;
     margin-left: 20px;
-    padding: 20px; /* Espacio alrededor del contenido */
-    background-color: #f9f9f9; /* Color de fondo */
-    border: 1px solid #ddd; /* Borde */
-    border-radius: 8px; /* Borde redondeado */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .conte h2 {
     font-family: astonpoliz;
     font-size: 24px;
-    color: #333; /* Cambia el color según tus preferencias */
-    margin-bottom: 10px; /* Espacio inferior */
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .conte p {
     font-family: astonpoliz;
     font-size: 16px;
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #666; /* Cambia el color según tus preferencias */
+    line-height: 1.6;
+    color: #666;
 }
 
 .bloque {
-    background-color: #f0f0f0; /* Color de fondo */
-    border-radius: 10px; /* Borde redondeado */
-    margin-bottom: 20px; /* Espacio entre bloques */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: center;
 }
 
 .bloque p, .bloque h3 {
@@ -157,8 +154,8 @@ table tbody tr:hover {
     margin-right: 50px;
     height: auto;
     width: 400px;
-    border-radius: 5px; /* Borde redondeado para las imágenes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .SP {
@@ -172,19 +169,28 @@ table tbody tr:hover {
 }
 
 .paginado {
+    bottom: 10px;
     position: fixed;
     top: var(--cabeza-height);
-    right: 160px; /* Ajusta el valor según tus necesidades */
-    font-size: 45px;
+    float: right;
+    margin-left: 84%;
     font-family: GulfDisplay;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    min-height: var(100vh - --cabeza-height); /* Mínimo 100% del alto de la ventana */
 }
 
 
 .letra {
-    margin-bottom: 5px; /* Espacio entre cada letra */
+    flex: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la letra */
+    align-items: center; /* Centra verticalmente la letra */
+    font-size: 36px;
+    margin: 10px;
+    overflow: hidden; /* Evita que las letras se salgan del contenedor */
 }
 
 /* Estilos para el pie de página */
@@ -214,31 +220,18 @@ table tbody tr:hover {
 
 .polpie {
     margin-bottom: 10px;
+    font-family: Astonpoliz;
 }
 
-.polpie p {
+.polpie a {
+    color: white;
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .cabeza {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .encabezado {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .bloque {
-        flex-direction: column;
-    }
-
-    .bloque img {
-        margin-top: 10px; /* Espacio entre imagen y texto */
-    }
+.politicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Fuente personalizada */
