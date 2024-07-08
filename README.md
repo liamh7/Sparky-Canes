@@ -337,7 +337,7 @@ table tbody tr:hover {
         <div class="icpie">
             <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="IMÁGENES/gmsp.png" alt="gmsp"></a>
             <a href="https://www.instagram.com/sparky_canes24/" target="_blank"><img src="IMÁGENES/igsp.png" alt="igsp"></a>
-            <a href="https://x.com/home" target="_blank"><img src="IMÁGENES/xsp.png" alt="xsp"></a>
+            <a href="https://x.com/Sparky_Perros24" target="_blank"><img src="IMÁGENES/xsp.png" alt="xsp"></a>
         </div>
     </div>
 </body>
