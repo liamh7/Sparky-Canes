@@ -177,29 +177,28 @@ table tbody tr:hover {
     font-family: GulfDisplay;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    min-height: var(100vh - --cabeza-height); /* Mínimo 100% del alto de la ventana */
+    justify-content: center;
+    align-items: center; 
+    min-height: var(100vh - --cabeza-height); 
 }
 
 
 .letra {
-    flex: 1; /* Ocupa todo el espacio disponible */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Centra horizontalmente la letra */
-    align-items: center; /* Centra verticalmente la letra */
+    justify-content: center;
+    align-items: center; 
     font-size: 36px;
     margin: 10px;
-    overflow: hidden; /* Evita que las letras se salgan del contenedor */
+    overflow: hidden; 
 }
 
-/* Estilos para el pie de página */
 .pie {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Cambiado a position: relative */
+    position: relative;
     width: 100%;
 }
 
@@ -234,7 +233,6 @@ table tbody tr:hover {
     align-items: center;
 }
 
-/* Fuente personalizada */
 @font-face {
     font-family: GulfDisplay;
     src: url(FUENTES/GulfsDisplay.ttf);
