@@ -172,19 +172,28 @@ table tbody tr:hover {
 }
 
 .paginado {
+    bottom: 10px;
     position: fixed;
     top: var(--cabeza-height);
-    right: 160px; /* Ajusta el valor según tus necesidades */
-    font-size: 45px;
+    float: right;
+    margin-left: 84%;
     font-family: GulfDisplay;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    min-height: var(100vh - --cabeza-height); /* Mínimo 100% del alto de la ventana */
 }
 
 
 .letra {
-    margin-bottom: 5px; /* Espacio entre cada letra */
+    flex: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la letra */
+    align-items: center; /* Centra verticalmente la letra */
+    font-size: 36px;
+    margin: 10px;
+    overflow: hidden; /* Evita que las letras se salgan del contenedor */
 }
 
 /* Estilos para el pie de página */
